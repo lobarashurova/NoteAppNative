@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_graph"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/addCategoryScreen"
+        android:name="uz.mlsoft.noteappnative.presentaion.screen.AddCategoryScreen"
+        android:label="AddCategoryScreen" />
+    <fragment
+        android:id="@+id/allNotesScreen"
+        android:name="uz.mlsoft.noteappnative.presentaion.screen.AllNotesScreen"
+        android:label="AllNotesScreen" />
+    <fragment
+        android:id="@+id/editCategoryScreen"
+        android:name="uz.mlsoft.noteappnative.presentaion.screen.EditCategoryScreen"
+        android:label="EditCategoryScreen" />
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="uz.mlsoft.noteappnative.presentaion.screen.HomeScreen"
+        android:label="HomeScreen">
+        <action
+            android:id="@+id/action_homeScreen_to_allNotesScreen"
+            app:destination="@id/allNotesScreen"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/homeScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeScreen_to_noteScreen"
+            app:destination="@id/noteScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_editCategoryScreen"
+            app:destination="@id/editCategoryScreen"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/homeScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeScreen_to_addCategoryScreen"
+            app:destination="@id/addCategoryScreen"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/homeScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNoteScreen"
+        android:name="uz.mlsoft.noteappnative.presentaion.screen.EditNotesScreen"
+        android:label="EditNoteScreen" />
+    <fragment
+        android:id="@+id/addNoteScreen"
+        android:name="uz.mlsoft.noteappnative.presentaion.screen.AddNoteScreen"
+        android:label="AddNoteScreen" />
+    <fragment
+        android:id="@+id/noteScreen"
+        android:name="uz.mlsoft.noteappnative.presentaion.screen.NoteScreen"
+        android:label="NoteScreen">
+        <action
+            android:id="@+id/action_noteScreen_to_editNoteScreen"
+            app:destination="@id/editNoteScreen" />
+        <action
+            android:id="@+id/action_noteScreen_to_addNoteScreen"
+            app:destination="@id/addNoteScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="uz.mlsoft.noteappnative.presentaion.screen.SplashScreen"
+        android:label="SplashScreen">
+        <action
+            android:id="@+id/action_splashScreen_to_homeScreen"
+            app:destination="@id/homeScreen"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

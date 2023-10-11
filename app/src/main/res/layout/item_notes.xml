@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_card"
+        android:backgroundTint="@color/colorPrimary"
+        android:paddingHorizontal="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/titlextx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:fontFamily="@font/nunito_bolditalic"
+            android:text="Title:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_semi_bolditalic"
+            android:maxLength="20"
+            android:maxLines="2"
+            android:text="bewbfhwebfhbfrh0"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titlextx" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/title_note" />
+
+
+        <TextView
+            android:id="@+id/note_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_semi_bolditalic"
+            android:gravity="center"
+            android:justificationMode="inter_word"
+            android:maxLength="40"
+            android:maxLines="8"
+            android:text="bewbfhwebfhbfrh0"
+            android:textSize="22sp"
+            app:layout_constraintTop_toBottomOf="@id/title_note" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/note_text" />
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/time_text"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="15dp"-->
+        <!--            android:text="12:56"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="15sp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/view2" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

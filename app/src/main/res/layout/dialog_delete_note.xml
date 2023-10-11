@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingBottom="10dp"
+    android:background="#EDE9E9"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/delete1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:fontFamily="@font/nunito_black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Do you want to delete this note?"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_delete"
+        android:fontFamily="@font/nunito_black"
+        android:text="Delete"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/cancel_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/delete1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_black"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:background="@drawable/back_delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/delete_btn"
+        app:layout_constraintTop_toBottomOf="@id/delete1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
